@@ -13,6 +13,9 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
    color: @black;
+   &.no-scroll {
+      overflow: hidden;
+   }
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -31,3 +34,8 @@ p, h1, h2, h3, h4, h5, h6 {
 @import "blocks/intro";
 @import "blocks/product";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/btn";
+@import "blocks/slick";
+@import "vendor/slick";
+@import "vendor/slick-theme";
