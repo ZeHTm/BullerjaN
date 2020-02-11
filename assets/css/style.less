@@ -1,0 +1,33 @@
+// compress: true
+
+@import "fonts";
+@import "vars";
+
+html {
+   font-size: 15px;
+}
+
+body {
+   background-color: #fbfbfb;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1rem;
+   color: @black;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/product";
+@import "blocks/footer";
