@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,54 +13,91 @@
 <header class="header">
    <div class="container">
       <div class="header__iner">
-            <a href="">
-               <img class="header__top-logo" src="assets/images/header/logo.png" alt="">
+
+            <a class="logo" href="">
+               <picture>
+                  <source srcset="assets/images/header/logo-mob.png" media="(max-width: 767px)">
+                  <img class="logo__img" src="assets/images/header/logo.png" alt="Bullerjan">
+               </picture>
             </a>
 
-            <div class="header__top-timwork">
-               <div class="header__top-time"><b>Мы работаем:</b></div>
-               <div class="header__top-workday">Пн-Пт: с - <b>8:00 - 18:00</b></div>
-               <div class="header__top-dayoff">Сб: с - <b>9:00 - 17:00</b></div>
-               <div class="header__top-dayoff">Вс: <b>Выходной</b></div>
+            <div class="timework">
+               <div class="timework__time"><b>Мы работаем:</b></div>
+               <div>Пн-Пт: <b>8:00 - 18:00</b></div>
+               <div>Сб: <b>9:00 - 17:00</b></div>
+               <div>Вс: <b>Выходной</b></div>
             </div>
 
-            <div class="header__top-contact">
+            <div class="contact">
 
-               <div class="header__top-contactC"><b>Контакты:</b></div>
+               <div class="contact__top"><b>Контакты:</b></div>
 
-               <div class="header__top-contactBlock">
-                  <a class="header__top-contactNum" href="tel:+380939917368">+38 (093) 991-73-68</a>
-                  <img src="assets/images/header/lifecel.png" alt="" class="header__top-contactOper">
+               <div class="contact__block">
+
+                  <a class="contact__namber" href="tel:+380939917368">+38 (093) 991-73-68</a>
+                  <picture>
+                     <source srcset="assets/images/header/lifecel-icon.png" media="(max-width: 991px)">
+                     <img src="assets/images/header/lifecel.png" alt="" class="contact__icon">
+                  </picture>
+
                </div>
 
-               <div class="header__top-contactBlock">
-                  <a class="header__top-contactNum" href="tel:+380964772841">+38 (096) 477-28-41</a>
-                  <img src="assets/images/header/kievstar.png" alt="" class="header__top-contactOper">
+               <div class="contact__block">
+                  <a class="contact__namber" href="tel:+380964772841">+38 (096) 477-28-41</a>
+                  <picture>
+                     <source srcset="assets/images/header/kievstar-icon.png" media="(max-width: 991px)">
+                     <img src="assets/images/header/kievstar.png" alt="" class="contact__icon">
+                  </picture>
                </div>
 
-               <div class="header__top-contactBlock">
-                  <a class="header__top-contactNum" href="tel:+380500218389">+38 (050) 021-83-89</a>
-                  <img src="assets/images/header/vadaf.png" alt="" class="header__top-contactOper">
+               <div class="contact__block">
+                  <a class="contact__namber" href="tel:+380500218389">+38 (050) 021-83-89</a>
+                  <picture>
+                     <source srcset="assets/images/header/vadaf-icon.png" media="(max-width: 991px)">
+                     <img src="assets/images/header/vadaf.png" alt="" class="contact__icon">
+                  </picture>
                </div>
 
             </div>
-            <div class="header__top-mail">
-                 <div class="header__top-mailIner">
-                  <button class="btn btn--header">Есть вопросы? Напиши нам!</button>
-                  <div class="header__top-maiLtext">EMAIL:</div>
-                  <a class="header__top-mailLink" href="mailto:kozhushko_sv@rambler.ru">kozhushko_sv@rambler.ru</a>
-               </div>
+
+            <div class="contact__mob-ver">
+               <a class="contact__namber" title="Viber" href="viber://add?number=120345678910">
+                  <img src="assets/images/header/viber.png" alt="" class="contact__mob-mobfirst">
+               </a>
+
+               <a class="contact__namber" href="tel:+380939917368">
+                  <img src="assets/images/header/lifecel-icon.png" alt="" class="contact__icon-mob">
+               </a>
+
+               <a class="contact__namber" href="tel:+380964772841">
+                  <img src="assets/images/header/kievstar-icon.png" alt="" class="contact__icon-mob">
+               </a>
+
+               <a class="contact__namber" href="tel:+380500218389">
+                  <img src="assets/images/header/vadaf-icon.png" alt="" class="contact__icon-mob">
+                 </a>
             </div>
+
+            <div class="mail">
+               <button class="btn btn--mail">Есть вопросы? Напиши нам!</button>
+               <div class="mail__text">EMAIL:</div>
+               <a class="mail__link" href="mailto:kozhushko_sv@rambler.ru">kozhushko_sv@rambler.ru</a>
+            </div>
+
+            <button class="burger" id="navToggle">
+               <img class="burger__icon" src="assets/images/header/burger.svg" alt="">
+            </button>
+
       </div>
    </div>
 </header>
 
 <div class="container container--nav">
    <div class="nav">
-      <a class="nav__link" href="#">Главная</a>
-      <a class="nav__link" href="#">Качество и Гарантия</a>
-      <a class="nav__link" href="#">Доставка и Оплата</a>
-      <a class="nav__link" href="#">Контакты</a>
+      <a class="nav__link" id="nav" href="#">Главная</a>
+      <a class="nav__link" id="nav1" href="#">Качество и Гарантия</a>
+      <a class="nav__link" id="nav2" href="#">Доставка и Оплата</a>
+      <a class="nav__link" id="nav3" href="#">Контакты</a>
    </div>
 </div>
 
@@ -71,8 +108,7 @@
 </div>
 
 
-
-<div class="product">
+<div class="product page">
    <div class="container">
      <div class="product__item">
 
@@ -115,7 +151,6 @@
       </div>
    </div>
 </div>
-
 
 <footer class="footer">
      <div class="footer__inner">

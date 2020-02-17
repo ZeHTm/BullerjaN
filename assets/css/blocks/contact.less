@@ -1,0 +1,81 @@
+//main: ../style.less
+
+.contact {
+   display: block;
+   width: 30%;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin: 1rem auto auto;
+   padding: 0 1rem 0 3rem;
+
+   @media @notebook {
+      font-size: 1rem;
+      padding: 0 .5rem 0 .5rem;
+   }
+
+   @media @mobile {
+      display: none;
+   }
+}
+
+.contact__top {
+   text-transform: uppercase;
+   display: block;
+}
+
+.contact__block {
+   display: flex;
+   cursor: pointer;
+
+   &:hover .contact__namber  {
+      text-decoration: underline;
+      color: @black;
+   }
+}
+
+.contact__namber {
+   display: block;
+   color: @gray;
+   text-decoration: none;
+}
+
+.contact__icon {
+   padding-left: 1rem;
+   height: 1.4rem;
+}
+
+/* Mobile version */
+
+.contact__mob-ver {
+   display: none;
+   margin: 0 auto;
+   justify-content: space-around;
+
+   @media @mobile {
+      display: flex;
+      }
+}
+
+.contact__icon-mob {
+   margin: 1.4rem 1rem;
+   height: 1.8rem;
+   @media @mobile-sm {
+      margin: 1.1rem .5rem;
+      height: 1.4rem;
+   }
+   @media @mobile-smol {
+      display: none;
+   }
+}
+
+.contact__mob-mobfirst {
+   margin: 1.2rem 1rem;
+   height: 2.4rem;
+   @media @mobile-sm {
+      margin: 1.1rem .5rem;
+      height: 1.6rem;
+   }
+   @media @mobile-smol {
+      display: none;
+   }
+}

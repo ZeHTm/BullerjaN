@@ -1,0 +1,28 @@
+//main: ../style.less
+
+.timework {
+   display: block;
+   width: 20%;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin: 1rem auto auto;
+   padding: 0 0 0 4rem;
+
+   @media @notebook {
+      font-size: 1rem;
+      padding: 0 0 0 2rem;
+   }
+
+   @media @tablet {
+      padding: 0 0 0 .8rem;
+      width: 25%;
+   }
+
+   @media @mobile {
+      display: none;
+   }
+}
+
+.timework__time {
+   text-transform: uppercase;
+}

@@ -13,9 +13,17 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
    color: @black;
+   width:100%;
+   overflow-x: hidden;
+
    &.no-scroll {
       overflow: hidden;
    }
+}
+
+/* Page */
+.page {
+    overflow: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -29,6 +37,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @import "blocks/header";
+@import "blocks/logo";
+@import "blocks/timework";
+@import "blocks/contact";
+@import "blocks/mail";
+
+@import "blocks/burger";
+
+
 @import "blocks/container";
 @import "blocks/nav";
 @import "blocks/intro";

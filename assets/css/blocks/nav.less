@@ -5,6 +5,12 @@
    margin: 0 auto 10px;
    display: flex;
    align-items: center;
+   position: absolute;
+
+   @media @mobile {
+      display: block;
+      margin-top: .4rem;
+   }
 }
 
 .nav__link {
@@ -30,6 +36,34 @@
       color: #fff;
       border: 2px solid black;
    }
+
+   @media @notebook {
+      font-size: 1.4rem;
+      margin: 0 .5rem;
+   }
+
+   @media @tablet {
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin: 0 .1rem;
+      padding: .8rem .2rem;
+      border: 1px solid @gray;
+   }
+
+   @media @mobile {
+      display: none;
+      width: 98%;
+      height: auto;
+      margin: 0.4rem auto;
+      border-radius: 0;
+      z-index: 1000;
+      padding: 1rem;
+      background-color: #f7f7f7;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+   }
+   &.show {
+         display: block;
+      }
 }
 
 

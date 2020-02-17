@@ -2,6 +2,24 @@ $(function() {
 
    const worksSlider = $('[data-slider="slick"]')
 
+   /* Mobile nav */
+
+   const navToggle = $("#navToggle");
+   const nav = $("#nav");
+   const nav1 = $("#nav1");
+   const nav2 = $("#nav2");
+   const nav3 = $("#nav3");
+
+   navToggle.on("click", function(event) {
+      event.preventDefault();
+
+      nav.toggleClass("show");
+      nav1.toggleClass("show");
+      nav2.toggleClass("show");
+      nav3.toggleClass("show");
+   });
+
+
    /*Modal*/
    const modalCall = $("[data-modal]");
    const modalClose = $("[data-close]");
