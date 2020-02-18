@@ -16,6 +16,10 @@
    &.show {
       display: flex;
    }
+
+   @media @tablet {
+      padding: 0;
+   }
 }
 
 .modal__dialog {
@@ -30,8 +34,13 @@
    transition: transform 0.2s linear;
 }
 
-.modal__dialog--sm {
-      max-width: 900px;
+@media @mobile {
+      .col1 {
+         order: 1;
+      }
+      .col2 {
+         order: 0;
+      }
    }
 
 .modal__close {
@@ -79,13 +88,21 @@
 
 .modal-work {
    display: flex;
+   @media @mobile {
+      flex-wrap: wrap;
+   }
 }
 
 .modal-work__prewiew {
    background-color: #d6d6d6;
-   width: 65%;
+   width: 60%;
    position: relative;
    overflow: hidden;
+
+   @media @mobile {
+      width: 100%;
+      height: 420px;
+   }
 }
 
 .modal-work__photo {
@@ -95,12 +112,23 @@
    left: 50%;
    z-index: 1;
    transform: translate3d(-50%, -50%, 0);
+   @media @mobile {
+     margin-top: -1.3rem;
+   }
 }
 
 .modal-work__content {
-   width: 35%;
-   padding: 3.4rem 6.6rem 1rem 1.7rem;
+   width: 40%;
+   padding: 3.4rem 1rem 1rem 1.7rem;
    position: relative;
+   @media @tablet {
+      padding: 3.4rem .8rem 1rem .8rem;
+   }
+
+   @media @mobile {
+      width: 100%;
+      padding: 3rem 1rem 0;
+   }
 }
 
 .modal-work__header {
@@ -113,39 +141,51 @@
    cilir: @black;
    font-weight: 700;
    text-transform: uppercase;
+   @media @mobile {
+      text-align: center;
+   }
 }
 
-.modal-work__info {
-   font-size: 1.2rem;
-   color: @gray;
-   text-transform: uppercase;
-}
-
-.modal-work__info-deliver {
-   margin: 0 1rem;
-}
-
-.modal-work__cli {
-   font-size: 1.06rem;
+.modal-work__prace {
+   font-size: 1.1rem;
    color: @black;
    font-weight: 700;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+   @media @mobile {
+      justify-content: center;
+      margin-bottom: 1.2rem;
+   }
 }
 
-.modal-work__cliname {
-   font-size: 0.94rem;
-   margin-bottom: 2rem;
-   color: @gray;
-   font-weight: 300;
-   font-style: italic;
-}
+.modal-work__prace1 {
+         margin-right: 0.3rem;
+      }
 
 .modal-work__text {
-   margin-bottom: 6.66rem;
-
-   font-size: 0.8rem;
-   line-height: 2;
-   color: @gray;
+   margin-bottom: 4rem;
+   font-size: 1.1rem;
+   line-height: 1.8;
    font-weight: 300;
+   @media @notebook {
+      font-size: 1rem;
+   }
+   @media @tablet {
+      font-size: 0.94rem;
+   }
+   @media @mobile {
+      text-align: center;
+   }
+}
+
+.modal-work__text-bottom {
+   margin-top: 1rem;
+   font-size: 1rem;
+   line-height: 1.2;
+   @media @tablet {
+      font-size: 0.9rem;
+   }
 }
 
 .modal-work__footer {
