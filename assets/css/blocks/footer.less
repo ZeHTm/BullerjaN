@@ -1,20 +1,40 @@
 //main: ../style.less
 
 .footer {
-   height: 6rem;
-   background-color: @gray;
+   display: none;
+   height: auto;
+   background-color: #9f9f9f;
+   box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+
+   @media @mobile {
+      display: flex;
+      }
 }
 
 .footer__inner {
-   display: flex;
-   justify-content: space-between;
    width: 100%;
-   max-width: 1200px;
-   margin: 0 auto;
+
+   @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      .colf1 {order: 2;}
+      .colf2 {order: 0;}
+      .colf3 {order: 1;}
+      .colf4 {order: 3;}
+      }
+
+   @media @mobile-sm {
+      display: block;
+      .colf1 {order: 0;}
+      .colf2 {order: 1;}
+      .colf3 {order: 2;}
+      .colf4 {order: 3;}
+      }
 }
 
-.footer__number {
-   color: @white;
-   padding: 2rem 0;
-   font-size: 1.2rem;
+.footer--show {
+   display: none;
+   @media @mobile {
+      display: block;
+      }
 }

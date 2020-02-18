@@ -42,3 +42,22 @@
       font-size: 1rem;
    }
 }
+
+.mail__footer {
+   @media @mobile {
+      width: 50%;
+      .mail__link {
+         color: @black;
+      }
+   }
+   @media @mobile-sm {
+      width: 100%;
+      .mail__link {
+         margin-bottom: 1.4rem;
+      }
+
+      .mail__text {
+         margin-bottom: .5rem;
+      }
+   }
+}

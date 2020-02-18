@@ -44,7 +44,29 @@
    height: 1.4rem;
 }
 
-/* Mobile version */
+
+.contact__footer {
+   @media @mobile {
+      text-align: center;
+      width: 50%;
+
+      .contact__block {
+         width: 220px;
+         margin: .2rem auto 0;
+         padding-left: 1.4rem;
+      }
+      .contact__namber {
+         color: @black;
+         width: 500;
+      }
+   }
+   @media @mobile-sm {
+      width: 100%;
+      margin: 1rem auto 0;
+   }
+}
+
+/* Mobile version icon top */
 
 .contact__mob-ver {
    display: none;
