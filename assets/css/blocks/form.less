@@ -1,0 +1,77 @@
+//main: ../style.less
+
+.form__group {
+   margin-bottom: 1.8rem;
+}
+
+.form__label {
+   display: inline-block;
+   margin-bottom: 0.6rem;
+   font-size: 0.8rem;
+   color: @black;
+   font-weight: 700;
+}
+
+.form__input,
+.form__textarea{
+   display: block;
+   width: 100%;
+   padding: 1.3rem 1.8rem;
+
+   border: 1px solid fade(#707070, 30%);
+   border-radius: 1.8rem;
+
+   font-family: inherit;
+   font-size: 0.8rem;
+   font-weight: 400;
+   line-height: 1.2;
+   transition: border-color 0.2s linear;
+
+   &:focus {
+      outline: none;
+      border-color: #000000;
+   }
+}
+
+.form__textarea {
+   height: 200px;
+   resize: none;
+}
+
+.form__center {
+   display: block;
+   width: 60%;
+   margin: 0 auto;
+   padding: 2rem;
+   @media @mobile {
+      width: 80%;
+   }
+   @media @mobile-sm {
+      padding: 1rem;
+      width: 90%;
+   }
+}
+
+.form__info {
+   margin: 2rem 0 3rem;
+   padding: 0;
+   list-style: none;
+
+   font-size: 0.94rem;
+   color: @black;
+   font-weight: 300;
+}
+
+.form__info-item {
+   display: flex;
+   align-content: center;
+   margin-bottom: 0.75rem;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.form__info-icon {
+   margin-right: 0.75rem;
+}
+

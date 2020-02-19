@@ -43,6 +43,10 @@
       }
    }
 
+.modal__dialog--sm {
+      max-width: 900px;
+   }
+
 .modal__close {
    width: 34px;
    height: 39px;
@@ -77,6 +81,15 @@
    font-weight: 700;
    color: @black;
    text-transform: uppercase;
+
+   @media @mobile {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+   }
+   @media @mobile-smol {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+   }
 }
 
 .modal__subtitle {
