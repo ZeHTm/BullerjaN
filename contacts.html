@@ -8,81 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #e3e3e3;">
 
 <header class="header">
    <div class="container">
-      <div class="header__iner">
-
-            <a class="logo" href="index.html">
-               <picture>
-                  <source srcset="assets/images/header/logo-mob.png" media="(max-width: 767px)">
-                  <img class="logo__img" src="assets/images/header/logo.png" alt="Bullerjan">
-               </picture>
-            </a>
-
-            <div class="timework">
-               <div class="timework__time"><b>Мы работаем:</b></div>
-               <div>Пн-Пт: <b>8:00 - 18:00</b></div>
-               <div>Сб: <b>9:00 - 17:00</b></div>
-               <div>Вс: <b>Выходной</b></div>
-            </div>
-
-            <div class="contact">
-
-               <div class="contact__top"><b>Контакты:</b></div>
-
-               <div class="contact__block">
-
-                  <a class="contact__namber" href="tel:+380939917368">+38 (093) 991-73-68</a>
-                  <picture>
-                     <source srcset="assets/images/header/lifecel-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/lifecel.png" alt="" class="contact__icon">
-                  </picture>
-
-               </div>
-
-               <div class="contact__block">
-                  <a class="contact__namber" href="tel:+380964772841">+38 (096) 477-28-41</a>
-                  <picture>
-                     <source srcset="assets/images/header/kievstar-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/kievstar.png" alt="" class="contact__icon">
-                  </picture>
-               </div>
-
-               <div class="contact__block">
-                  <a class="contact__namber" href="tel:+380500218389">+38 (050) 021-83-89</a>
-                  <picture>
-                     <source srcset="assets/images/header/vadaf-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/vadaf.png" alt="" class="contact__icon">
-                  </picture>
-               </div>
-
-            </div>
-
-            <div class="contact__mob-ver">
-               <a class="contact__namber" title="Viber" href="viber://add?number=120345678910">
-                  <img src="assets/images/header/viber.png" alt="" class="contact__mob-mobfirst">
-               </a>
-
-               <a class="contact__namber" href="tel:+380939917368">
-                  <img src="assets/images/header/lifecel-icon.png" alt="" class="contact__icon-mob">
-               </a>
-
-               <a class="contact__namber" href="tel:+380964772841">
-                  <img src="assets/images/header/kievstar-icon.png" alt="" class="contact__icon-mob">
-               </a>
-
-               <a class="contact__namber" href="tel:+380500218389">
-                  <img src="assets/images/header/vadaf-icon.png" alt="" class="contact__icon-mob">
-                 </a>
-            </div>
-
-            <div class="mail">
-               <button class="btn btn--mail" data-modal="#send_mail">Есть вопросы? Напиши нам!</button>
-               <div class="mail__text">EMAIL:</div>
-               <a class="mail__link" href="mailto:kozhushko_sv@rambler.ru">kozhushko_sv@rambler.ru</a>
-            </div>
+      <div class="header__iner header__iner-footer">
 
             <button class="burger" id="navToggle">
                <img class="burger__icon" src="assets/images/header/burger.svg" alt="">
@@ -102,61 +32,74 @@
 </div>
 
 
-<footer class="footer">
-     <div class="footer__inner">
+<footer class="container footer footer-contacts">
+     <div class="footer__inner footer__inner-contacts">
 
-            <div class="logo logo__footer colf1" href="">
-               <img class="logo__img" src="assets/images/header/logo.png" alt="Bullerjan">
+            <div class="logo logo__footer" href="">
+               <img class="logo__img logo__img-footer" src="assets/images/header/logo.png" alt="Bullerjan">
+               <div class="logo__text-footer"><b>《Греет больше, служит дольше》</b>- это известный слоган украинской компании Экотерм. Действительно, когда речь идет о  отопительных и портативных печах данной компании, то выразится более точно не возможно. Основанная в 2014 году, торговая марка Экотерм уже успела покорить сердца покупателей. Производство печей происходит в Украине, поэтому проверена суровыми климатическими условиями этого региона.
+               Экотерм специализируется на производстве печей булерьян.
+               Вся продукция этого производителя,  имеет долгий срок эксплуатации, поскольку изготовлена из высококачественного сырья.
+               Все модели печей, имеют высокое качество, поэтому их покупка станет отличным капиталовложением. Компания Экотерм работает по принципу: быстрый заказ - быстрая доставка. Поэтому, после оформления заказа в нашем интернет - магазине, Ваш товар будет доставлен в кратчайшие сроки.</div>
             </div>
 
-            <div class="timework timework__footer colf2 footer--show">
-               <div class="timework__time"><b>Мы работаем:</b></div>
-               <div>Пн-Пт: <b>8:00 - 18:00</b></div>
-               <div>Сб: <b>9:00 - 17:00</b></div>
-               <div>Вс: <b>Выходной</b></div>
+            <div class="footer__block--timeContacts">
+
+              <div class="contact contact-contacts">
+
+                  <div class="contact__top">
+                     <b>Контакты:</b>
+                  </div>
+
+                  <div class="contact__block">
+
+                     <a class="contact__namber" href="tel:+380939917368">+38 (093) 991-73-68</a>
+                     <picture>
+                        <img src="assets/images/header/lifecel.png" alt="" class="contact__icon">
+                     </picture>
+
+                  </div>
+
+                  <div class="contact__block">
+                     <a class="contact__namber" href="tel:+380964772841">+38 (096) 477-28-41</a>
+                     <picture>
+                        <img src="assets/images/header/kievstar.png" alt="" class="contact__icon">
+                     </picture>
+                  </div>
+
+                  <div class="contact__block">
+                     <a class="contact__namber" href="tel:+380500218389">+38 (050) 021-83-89</a>
+                     <picture>
+                        <img src="assets/images/header/vadaf.png" alt="" class="contact__icon">
+                     </picture>
+                  </div>
+               </div>
+
+
+               <div class="timework timework__footer timework--contacts">
+                  <div class="timework__time"><b>Мы работаем:</b></div>
+                  <div>Пн-Пт: <b>8:00 - 18:00</b></div>
+                  <div>Сб: <b>9:00 - 17:00</b></div>
+                  <div>Вс: <b>Выходной</b></div>
+               </div>
+
             </div>
 
-            <div class="contact contact__footer colf3 footer--show">
-
-               <div class="contact__top">            <b>Контакты:</b>
-               </div>
-
-               <div class="contact__block">
-
-                  <a class="contact__namber" href="tel:+380939917368">+38 (093) 991-73-68</a>
-                  <picture>
-                     <source srcset="assets/images/header/lifecel-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/lifecel.png" alt="" class="contact__icon">
-                  </picture>
-
-               </div>
-
-               <div class="contact__block">
-                  <a class="contact__namber" href="tel:+380964772841">+38 (096) 477-28-41</a>
-                  <picture>
-                     <source srcset="assets/images/header/kievstar-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/kievstar.png" alt="" class="contact__icon">
-                  </picture>
-               </div>
-
-               <div class="contact__block">
-                  <a class="contact__namber" href="tel:+380500218389">+38 (050) 021-83-89</a>
-                  <picture>
-                     <source srcset="assets/images/header/vadaf-icon.png" media="(max-width: 991px)">
-                     <img src="assets/images/header/vadaf.png" alt="" class="contact__icon">
-                  </picture>
-               </div>
-
-            </div>
-
-            <div class="mail mail__footer colf4 footer--show">
-               <button class="btn btn--mail" data-modal="#send_mail">Есть вопросы? Напиши нам!</button>
+            <div class="mail mail-contacts">
+               <button class="btn btn--contacts" data-modal="#send_mail">Есть вопросы? Напиши нам!</button>
                <div class="mail__text">EMAIL:</div>
                <a class="mail__link" href="mailto:kozhushko_sv@rambler.ru">kozhushko_sv@rambler.ru</a>
             </div>
 
       </div>
 </footer>
+
+<div class="map">
+               <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85668.55290886955!2d35.10531427261537!3d47.85620770200535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc673dfa85bb03%3A0x7e675cd9074d3f4a!2z0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1sru!2sua!4v1582147460498!5m2!1sru!2sua" width="800" height="450" frameborder="0" allowfullscreen=""></iframe>
+               <div class="map__info">
+                   У нашего интернет магазина нет физического адреса, но наш склад находится териториально в г. Запорожье. Отправка товара происходит из Запорожья, по Запорожью есть доставка, также возможна доставка по области (уточняйте подробности у менеджера).
+               </div>
+            </div>
 
 <!--modal-->
 <div class="modal" id="send_mail">
