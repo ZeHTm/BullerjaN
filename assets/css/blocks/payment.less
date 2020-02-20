@@ -1,0 +1,67 @@
+//main: ../style.less
+
+.payment {
+   margin-top: 5rem;
+   @media @mobile {
+      margin-top: 2rem;
+   }
+   @media @mobile-sm {
+      margin-top: 1rem;
+   }
+}
+
+.payment__title {
+   margin-bottom: 2rem;
+   text-align: center;
+   line-height: 2;
+   font-size: 1.4rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.payment__text {
+   margin-bottom: 2rem;
+   font-size: 1rem;
+   line-height: 1.4;
+}
+
+.payment__text-center {
+   text-align: center;
+}
+
+.payment__text-color {
+   color: @gray;
+   font-style: italic;
+}
+
+.payment__item {
+   margin-bottom: 2rem;
+   display: flex;
+   @media @mobile-sm {
+      display: block;
+   }
+}
+
+.pay-ship__block {
+   width: 180px;
+   margin: 0 auto;
+   display: block;
+   @media @mobile {
+      width: 160px;
+   }
+   @media @mobile-sm {
+      margin-bottom: 2rem;
+   }
+}
+
+.pay-ship__img {
+   display: block;
+   margin: 0 auto;
+}
+
+.pay-ship__text {
+   margin-top: 1rem;
+   text-align: center;
+   font-style: italic;
+   font-weight: 700;
+}
