@@ -5,6 +5,12 @@
    margin-bottom: 1rem;
    color: #484848;
    font-weight: 700;
+   @media @mobile {
+      font-size: 1.8rem;
+   }
+   @media @mobile-sm {
+      font-size: 1.6rem;
+   }
 }
 
 .intro__text {
@@ -13,13 +19,28 @@
    margin-bottom: .8rem;
    color: #484848;
    font-weight: 700;
+   @media @mobile {
+      font-size: 1.4rem;
+   }
+   @media @mobile-sm {
+      font-size: 1.2rem;
+   }
 }
 
 .intro__slider {
-   display: block;
-   margin: 4rem auto 0;
-   height: 530px;
    max-width: 1200px;
+   margin: 4rem auto 0;
+   @media @mobile {
+      margin: 1rem auto 0;
+   }
+}
+
+.slickIntro {
+   display: block;
+   margin: 0 auto;
+   height: 530px;
+   width: 1200px;
+
    @media @tablet {
       height: 455px;
    }
@@ -38,12 +59,16 @@
    }
 }
 
+
 .intro__image {
+   display: block;
+   margin: 0 auto;
    height: 500px;
    width: 100%;
    object-fit: cover;
    object-position: center;
-      @media @tablet {
+
+   @media @tablet {
       height: 425px;
    }
 
