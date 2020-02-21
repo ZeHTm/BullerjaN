@@ -1,8 +1,15 @@
 //main: ../style.less
 
+.page {
+    overflow: hidden;
+}
+
 .page__block {
    display: block;
    @media @notebook {
       margin: 0 2rem;
+   }
+   @media @mobile {
+      margin: 0 1rem;
    }
 }

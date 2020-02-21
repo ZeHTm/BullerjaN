@@ -1,6 +1,9 @@
 //main: ../style.less
 
 .payment {
+      &:last-child {
+      margin-bottom: 3rem;
+   }
    margin-top: 5rem;
    @media @mobile {
       margin-top: 2rem;
@@ -23,6 +26,10 @@
    margin-bottom: 2rem;
    font-size: 1rem;
    line-height: 1.4;
+      @media @mobile-sm {
+      margin-left: 0;
+      text-align: center;
+   }
 }
 
 .payment__text-center {

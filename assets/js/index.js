@@ -1,6 +1,7 @@
 $(function() {
 
    const worksSlider = $('[data-slider="slick"]')
+   const introSlider = $('[data-slider="slickIntro"]')
 
    /* Mobile nav */
 
@@ -109,5 +110,16 @@ $(function() {
 
       currentSlider.slick("slickNext")
    });
+
+   /* header slider */
+   introSlider.slick({
+     dots: true,
+     infinite: true,
+     speed: 500,
+     slidesToShow: 1,
+     autoplay: true,
+     autoplaySpeed: 3000,
+});
+
 
 });
