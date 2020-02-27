@@ -82,8 +82,6 @@ $(function() {
       event.stopPropagation();
    });
 
-
-
    /* Slider: https://kenwheeler.github.io/slick/ */
 
    worksSlider.slick({
